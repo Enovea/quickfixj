@@ -660,7 +660,7 @@ public class Message extends FieldMap {
 
     private boolean checkFieldValidation(FieldMap parent, DataDictionary parentDD, StringField field, String msgType, boolean doValidation, Group group) throws FieldException {
         boolean isField = (parent instanceof Group) ? parentDD.isField(field.getTag()) : parentDD.isMsgField(msgType, field.getTag());
-        if (!isField) {
+        if (!isField && group != null) {
             if (doValidation) {
                 boolean fail = parentDD.checkFieldFailure(field.getTag(), false);
                 if (fail) {
