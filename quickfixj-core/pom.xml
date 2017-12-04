@@ -12,6 +12,7 @@
 	<name>QuickFIX/J Core engine</name>
 	<description>The core QuickFIX/J engine</description>
 	<url>http://www.quickfixj.org</url>
+	<version>1.6.4.ENOVEA1</version>
 
 	<properties>
 		<acceptance.tests>**/AcceptanceTestSuite.java</acceptance.tests>
@@ -190,7 +191,7 @@
             <plugin>
                 <groupId>org.quickfixj</groupId>
                 <artifactId>quickfixj-codegenerator</artifactId>
-                <version>${project.version}</version>
+                <version>1.6.4</version>
                 <executions>
                     <execution>
                         <id>fixt11</id>
